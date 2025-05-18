@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Home() {
@@ -29,8 +30,15 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12">
         <section id="hero" className="flex flex-col items-center justify-center py-16 text-center">
-          <div className="mb-6 h-32 w-32 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-            {/* Placeholder for profile image */}
+          <div className="mb-6 h-60 w-60 relative">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1746484060549-cvdja5khcZaBf1ZuRHeWsaLYLetnIv.jpeg"
+              alt="Oddy Profile"
+              width={240}
+              height={240}
+              className="object-cover rounded-lg"
+              priority
+            />
           </div>
           <h1 className="mb-2 text-4xl font-bold">Oddy</h1>
           <p className="mb-6 text-gray-600 dark:text-gray-400">
